@@ -1,7 +1,7 @@
 package com.sunkeding.kotlin
 
 // :是继承的意思
-class Girl: Person() {
+class Girl : Person() {
 
     var age = 20;
     var name = "sss";
@@ -11,15 +11,18 @@ class Girl: Person() {
 }
 
 open class Person {
-    var desc:String=""
+    var desc: String = ""
+
     init {
         println("初始化Person")
     }
-    constructor(s1:String){
-        desc=s1
+
+    constructor(s1: String) {
+        desc = s1
         println("Person一参的构造方法")
     }
-    constructor(){
+
+    constructor() {
         println("Person无参的构造方法")
     }
 
